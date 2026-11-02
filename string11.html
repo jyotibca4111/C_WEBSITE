@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user and print each character in new line ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char str[50];<br>
+    int i;<br>
+    
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+	if(str[strlen(str)-1]=='\n')<br>
+	{<br>
+	str[strlen(str)-1]='\0';<br>
+	}<br>
+printf("\n Character in the string: \n");<br>
+for(i=0;i<strlen(str);i++)<br>
+{<br>
+printf("%c\n",str[i]);<br>
+}<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: hey<br>
+h<br>
+e<br>
+y<br>
+ </p>
+</body>
+</html>

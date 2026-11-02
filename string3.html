@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter a string from user and convert into sentence case ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+    char str[50];<br>
+    int i=0;<br>
+    
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+while(str[i]!='\0')<br>
+{<br>
+str[i]=tolower(str[i]);<br>
+i++;<br>
+}<br>
+   if(str[0]>='a'&&str[0]<='z')<br>
+   {<br>
+   str[0]=toupper(str[0]);<br>
+   }<br>
+printf("String in sentence case : %s\n",str);<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: hELLO<br>
+string in sentence case: Hello<br>
+ </p>
+</body>
+</html>

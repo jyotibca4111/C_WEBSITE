@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter a number from user and find out factorial of that number ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+  int n,i;<br>
+  long long factorial=1;<br>
+
+printf("Enter the number:");<br>
+scanf("%d",&n);<br>
+  if(n<0)<br>
+  {<br>
+    printf("Factorial of a negative number doesn't exist.\n");<br>
+  }<br>
+else<br>
+{   for(i=1;i<=n;i++)<br>
+    {<br>
+      factorial=factorial*i;<br>
+    }<br>
+printf("Factorial of %d is:%lld\n",n,factorial);<br>
+}<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+    Enter a number: 5<br>
+    factorial of 5 : 120 <br>
+
+   </p>
+</body>
+</html>

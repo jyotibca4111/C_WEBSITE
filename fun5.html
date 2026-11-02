@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Swap numbers using Call by address ?</h1>
+<p>
+    #include &lt;stdio.h&gt;<br>
+void swap(int *a, int *b) {<br>
+    int temp;<br>
+    temp = *a;  <br>
+    *a = *b;    <br>
+    *b = temp;   <br>
+}
+<br>
+void main() {<br>
+    int num1, num2;<br>
+
+   printf("Enter two numbers: ");<br>
+    scanf("%d %d", &num1, &num2);<br>
+
+    printf("\nBefore swapping:\n");<br>
+    printf("num1 = %d, num2 = %d\n", num1, num2);<br>
+
+    swap(&num1, &num2);<br>
+
+    printf("\nAfter swapping:\n");<br>
+    printf("num1 = %d, num2 = %d\n", num1, num2);<br>
+}<br>
+</p>
+<h2>
+    Output:-
+</h2>
+<p>
+
+</p>
+</body>
+</html>

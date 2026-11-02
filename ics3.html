@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1> Enter a number from the user and check it is a prime number or not ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+int num,i,flag=0;<br>
+
+printf("enter a number:");<br>
+scanf("%d",&num);<br>
+if(num<=1)<br>
+{<br>
+printf("%d is not a prime number.\n",num);<br>
+return 0;<br>
+}<br>
+for(i=2;i<=num/2;i++)<br>
+{<br>
+if(num%1==0)<br>
+{<br>
+flag=1;<br>
+break;<br>
+}<br>
+}<br>
+if(flag==0)<br>
+printf("%d is a prime number.\n",num);<br>
+else<br>
+printf("%d is not a prime number.\n",num);<br>
+}<br>
+
+   </p>
+   <h2>
+    output:-
+   </h2>
+   <p>
+enter a number : 7<br>
+7 is a prime number<br>
+   </p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter the number from user and reverse the number?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+int num,reversed=0,remainder;<br>
+
+printf("Enter a number:");<br>
+scanf("%d",&num);<br>
+while(num!=0)<br>
+{<br>
+remainder=num%10;<br>
+reversed=reversed*10+remainder;<br>
+num/=10;<br>
+}<br>
+printf("Reversed number:%d\n",reversed);<br>
+}<br>
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+ enter a number: 12345<br>
+ reversed number:54321<br>
+   </p>
+</body>
+</html>

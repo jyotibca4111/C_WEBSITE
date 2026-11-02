@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter a number from the user and print all digit of the number in separate line ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+long long num;<br>
+
+printf("Enter a number:");<br>
+scanf("%d",&num);<br>
+if(num<0)<br>
+{<br>
+num=-num;<br>
+}<br>
+while(num>0)<br>
+{<br>
+printf("%lld\n",num%10);<br>
+num/=10;}<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+enter a digit:1234<br>
+1<br>
+2<br>
+3<br>
+4<br>
+   </p>
+</body>
+</html>

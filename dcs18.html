@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter two digit number from user and print it in word (like 50 will be five zero) ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+
+void main()<br>
+{<br>
+    int num,first,second;<br>
+    
+printf("Enter two digit number:");<br>
+scanf("%d",&num);<br>
+        if(num<10||num>99)<br>
+        {<br>
+            printf("Please enter a valid two-digit number");<br>
+        }<br>
+            else<br>
+          {<br>
+             first=num/10;<br>
+             second=num%10;<br>
+          }<br>
+    switch(first)<br>
+    {<br>
+        case 0:<br>
+        printf("zero");<br>
+        break;  <br>
+        case 1:<br>
+        printf("one");<br>
+        break;<br>
+        case 2:<br>
+        printf("two");<br>
+        break;<br>
+        case 3:<br>
+        printf("three");<br>
+        break;<br>
+        case 4:<br>
+        printf("four");<br>
+        break;<br>
+        case 5:<br>
+        printf("five");<br>
+        break;<br>
+        case 6:<br>
+        printf("six");<br>
+        break;<br>
+        case 7:<br>
+        printf("seven");<br>
+        break;<br>
+        case 8:<br>
+        printf("eight");<br>
+        break;<br>
+        case 9:<br>
+        printf("nine");<br>
+        break;<br>
+    }<br>
+        switch(second)<br>
+        {<br>
+            case 0: <br>
+            printf("zero");<br>
+            break;<br>
+            case 1:<br>
+            printf("one");<br>
+            break;<br>
+            case 2:<br>
+            printf("two");<br>
+            break;<br>
+            case 3:<br>
+            printf("three");<br>
+            break;<br>
+            case 4: <br>
+            printf("four");<br>
+            break;<br>
+            case 5:<br>
+            printf("five");<br>
+            break;<br>
+            case 6:<br>
+            printf("six");<br>
+            break;<br>
+            case 7:<br>
+            printf("seven");<br>
+            break;<br>
+            case 8:<br>
+            printf("eight");<br>
+            break;<br>
+            case 9:<br>
+            printf("nine");<br>
+            break;<br>
+
+        }<br>
+}<br>
+
+
+    </p>
+<h2>
+    Output:-
+</h2>
+<p>
+    Enter two digit number :23<br>
+    two three
+
+</p>
+</body>
+</html>

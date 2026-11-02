@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter date, month, year and check it is valid date or not ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    int date,month,year;<br>
+
+printf("Enter the date:");<br>
+scanf("%d",&date);<br>
+printf("Enter the month:");<br>
+scanf("%d",&month);<br>
+printf("Enter the year:");<br>
+scanf("%d",&year);<br>
+            if(year<1||month<1||month>12||date<1||date>31)<br>
+            printf("Invalid date");<br>
+        else if((month==4||month==6||month==9||month==11)&&date>30)<br>
+        printf("Invalid date");<br>
+            else if(month==2)<br>
+            if((year%400==0)||(year%4==0&&year%100!=0))<br>
+            {<br>
+                if(date>29)<br>
+                printf("Invalid date");<br>
+                else<br>
+                printf("Valid date");};<br>
+                if(date>28)<br>
+                printf("Invalid date");<br>
+                else<br>
+                printf("Valid date");<br>
+            }<br>
+}<br>
+
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+enter day:29<br>
+enter month:2<br>
+enter year:2024<br>
+The date is valid <br>
+    </p>
+</body>
+</html>

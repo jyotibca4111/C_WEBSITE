@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Making following program using local and global variable ? Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+int num;<br>
+void factorial();<br>
+void reverse();<br>
+void palindrome();<br>
+void prime();<br>
+void armstrong();<br>
+void fibonacci();<br>
+
+
+void main()<br>
+{<br>
+printf("Enter a number:");<br>
+scanf("%d",&num);<br>
+factorial();<br>
+reverse();<br>
+palindrome();<br>
+prime();<br>
+armstrong();<br>
+fibonacci();<br>
+}<br>
+
+void factorial()<br>
+{<br>
+int i,fact=1; //local variables<br>
+for(i=1;i<=num;i++)<br>
+{ fact *=1;}<br>
+printf("\,factorial of%d=%d",num,fact);<br>
+}<br>
+void reverse()<br>
+{<br>
+int n=num,rev=0;<br>
+while(n>0)<br>
+{<br>
+rev=rev*10+n%10;<br>
+n/=10;<br>
+}<br>
+printf("\n%d is not %d=%d",num,rev);<br>
+}<br>
+void palidrome()<br>
+{<br>
+int n=num,rev=0,temp;<br>
+temp=n;<br>
+while(n>0)<br>
+{<br>
+rev=rev*10+n%10;<br>
+n/=10;<br>
+}<br>
+if(temp==rev)<br>
+printf("\n%d is a palidrome number",num);<br>
+else<br>
+printf("\n%d is not a palidrome number",num);<br>
+}<br>
+void prime()<br>
+{<br>
+int i, count=0;<br>
+for(i=1;i<=num;i++)<br>
+{<br>
+if(num%i==0)<br>
+count++;<br>
+}<br>
+if(count==2)<br>
+printf("\n%d is a prime number", num);<br>
+else<br>
+printf("\n%d is not a prime number",num);}<br>
+void aramstrong()<br>
+{<br>
+int n=num,rem,sum=0;<br>
+while(n>0)<br>
+{<br>
+rem=n%10;<br>
+sum+=rem*rem*rem;<br>
+n/=10;<br>
+}<br>
+if(sum==num)<br>
+printf("\n%d is an armstrong number",num);<br>
+else<br>
+printf("\n%d is not an armstrong number",num);<br>
+}<br>
+void fibonacci()<br>
+{<br>
+int n=num;<br>
+int a=0,b=1,c,i;<br>
+printf("\nFibonacci series up to %d terms:",n);<br>
+for(i=1;i<=n;i++)<br>
+{<br>
+printf("%d",a);<br>
+c=a+b;<br>
+a=b;<br>
+b=c;<br>
+}<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+
+   </p>
+</body>
+</html>

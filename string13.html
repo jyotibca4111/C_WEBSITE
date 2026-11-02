@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter two string from user and print difference each character ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char str1[50],str2[50];<br>
+    int i;<br>
+    
+printf("enter first string: ");<br>
+gets(str1);<br>
+printf("enter second string: ");<br>
+gets(str2);<br>
+    printf("\n Difference of each charcter (ASCII): \n");<br>
+        for(i=0;str1[i]!='\0'&&str2[i]!='\0';i++)<br>
+        {<br>
+            printf("'%c'-'%c'=%d\n",str1[i],str2[i],str1[i]-str2[i]);<br>
+        }<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter first string:ABC<br>
+enter second string: ABD<br>
+difference of 'A' and'A'=0<br>
+difference of 'B' and'B'=0<br>
+difference of 'C' and'D'=-1<br>
+ </p>
+</body>
+</html>

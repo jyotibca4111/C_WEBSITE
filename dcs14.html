@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter a number from the user if the user enters 30 then print the month in which we have 30 days. If the enter 31 then print the month 31 days for 28, 29 print the month else everything is invalid ?</h1>
+<p>
+    #include &lt;stdio.h&gt;<br>
+int main() {<br>
+    int days;<br>
+    printf("Enter number of days: ");<br>
+    scanf("%d", &days);<br>
+    switch(days){<br>
+    case 31:<br>
+        printf("Months: January, March, May, July, August, October, December"); break;<br>
+    case 30:<br>
+        printf("Months: April, June, September, November"); break;<br>
+    case 28: <br>
+        printf("Month: February"); break;<br>
+    case 29:<br>
+        printf("Month: February"); break;<br>
+    default:<br>
+        printf("Invalid number of days");}<br>
+}<br>
+
+</p>
+<h2>
+    Output:-
+</h2>
+<p>
+    Enter number of days:28<br>
+    month:February<br>
+
+</p>
+</body>
+</html>

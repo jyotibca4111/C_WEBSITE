@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user and enter a character if it is exist then print the bound number ?
+
+ </h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char str[50],ch;<br>
+    int i,found=0;<br>
+    
+printf("Enter a string: ");<br>
+scanf("%c",&ch);<br>
+  printf("Enter a character to search: ");<br>
+  scanf("%c",&ch);<br>
+for(i=0;str[i]!='\0';i++)<br>
+{<br>
+if(str[i]==ch)<br>
+{<br>
+printf("Character '%c' found at position %d\n",ch,i);<br>
+found=1;<br>
+break;<br>
+}<br>
+}<br>
+   if(!found)<br>
+   {<br>
+   printf("Character '%c' not found in the string .\n",ch);<br>
+   }<br>
+}
+<br>
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: hello<br>
+enter a caharcter: l<br>
+character l found at position 2<br>
+ </p>
+</body>
+</html>

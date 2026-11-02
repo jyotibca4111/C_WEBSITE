@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user and enter a character , it is exist or not ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+    char str[50],ch;<br>
+    int i,found=0;<br>
+    
+printf("Enter a string:");<br>
+fgets(str,sizeof(str),stdin);<br>
+      if(str[strlen(str)-1]=='\n')<br>
+      {<br>
+      str[strlen(str)-1]='\0';<br>
+      }<br>
+printf("Enter a character to search: ");<br>
+scanf("%c",&ch);<br>
+    for(i=0;str[i]!='\0';i++)<br>
+    {<br>
+      if(str[i]==ch)<br>
+      {<br>
+	found=1;<br>
+	break;<br>
+     }<br>
+if(found)<br>
+printf("Character '%c' exists in the string.\n",ch);<br>
+else<br>
+printf("Character '%c' does not exist  in the string .\n",ch);<br>
+}<br>
+}
+<br>
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: hello<br>
+enter a character: z<br>
+character z does not in the string <br>
+ </p>
+</body>
+</html>

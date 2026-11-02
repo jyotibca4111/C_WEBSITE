@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter current date of DOB of user and find out difference ?</h1>
+    <p>
+        #include &lt;stdio.h&gt;<br>
+
+void main() {<br>
+    int c_day, c_month, c_year;<br>
+    
+    int b_day, b_month, b_year;<br>
+    int age_day, age_month, age_year;<br>
+    printf("Enter current date (dd mm yyyy): ");<br>
+    scanf("%d %d %d", &c_day, &c_month, &c_year);<br>
+
+    
+    printf("Enter date of birth (dd mm yyyy): ");<br>
+    scanf("%d %d %d", &b_day, &b_month, &b_year);<br>
+
+    if (c_day < b_day) {<br>
+        c_day += 30;   // assume 30 days per month<br>
+        c_month -= 1;<br>
+    }<br>
+
+    if (c_month < b_month) {<br>
+        c_month += 12;<br>
+        c_year -= 1;<br>
+    }<br>
+
+
+    age_day = c_day - b_day;<br>
+    age_month = c_month - b_month;<br>
+    age_year = c_year - b_year;<br>
+
+    printf("\nYour Age is: %d years, %d months, and %d days.\n",<br>
+           age_year, age_month, age_day);<br>
+
+    
+} <br>
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+Enter birth day:6<br>
+Enter birth month:7<br>
+enter birth year:2008<br>
+enter current day:5<br>
+enter  current month:11<br>
+enter current year:2025<br>
+
+
+Difeerence in days :6331 <br>
+approximate age:17
+    </p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter a number from user and print first digit of number ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+    int num,firstdigit;<br>
+    
+printf("Enter the number:");<br>
+scanf("%d",&num);<br>
+    if(num<0)<br>
+    num=-num;<br>
+        while(num>=10)<br>
+        {    <br>
+        num=num/10;<br>
+        }<br>
+firstdigit=num;<br>
+printf("the first digit is:%d\n",firstdigit);<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+    Enter a number: 903<br>
+    first digit: 9<br>
+   </p>
+</body>
+</html>

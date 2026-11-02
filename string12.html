@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user and copy reverse order into another string ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char str1[50],str2[50];<br>
+    int i,len;<br>
+
+printf("enter a string: ");<br>
+fgets(str1,sizeof(str1),stdin);<br>
+len=strlen(str1);<br>
+	if(str1[len-1]=='\n')<br>
+	{<br>
+	  str1[len-1]='\0';<br>
+	 }<br>
+for(i=0;i<len;i++)<br>
+{<br>
+str2[i]=str1[len-1-i];<br>
+}<br>
+str2[len]='\0';<br>
+printf("Reversed string: %s\n",str2);<br>
+}<br>
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string:hey<br>
+reversed:yeh<br>
+ </p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter the four number from user and print it into matrix
+
+    </h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+  int matrix[2][2],i;<br>
+  
+printf("Enter four number seprated by space:\n");<br>
+    for(i=0;i<2;i++)<br>
+    {<br>
+      for(int j=0;j<2;j++)<br>
+      {<br>
+        scanf("%d",&matrix[i][j]);<br>
+      }<br>
+    }<br>
+  printf("\nMatrix is:\n");<br>
+      for(i=0;i<2;i++)<br>
+      {<br>
+        for(int j=0;j<2;j++)<br>
+        {<br>
+           printf("%d\t",matrix[i][j]);<br>
+        }<br>
+            printf("\n");<br>
+      }<br>
+}<br>
+
+    </p>
+    <h2>
+        output:-
+    </h2>
+    <p>
+        enter four number:  1 2 3 4 <br>
+        1  2<br>
+        3  4<br>
+    </p>
+</body>
+</html>

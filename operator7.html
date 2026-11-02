@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1> Enter a decimal number from the user (float) and print the right hand side of the decimal point ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    float num;<br>
+    int intpart;<br>
+    float fracpart;<br>
+    
+printf("Enter a Decimal number:");<br>
+scanf("%d",&num);<br>
+
+intpart=(int)num;<br>
+fracpart=num-intpart;<br>
+int rightside=(int)(fracpart*1000000);<br>
+ while(rightside%10==0&&rightside!=0)<br>
+ rightside/=10;<br>
+ printf("Right-hand side of decimal point :%d\n",rightside);<br>
+}<br>
+
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+enter a decimal number:12.56<br>
+right-hand side of decimal point:56<br>
+    </p>
+</body>
+</html>

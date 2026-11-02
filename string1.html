@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter a string from user and convert in uppercase ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+void main()<br>
+
+{<br>
+
+    char str[50];<br>
+
+    int i=0;<br>
+
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+        while(str[i]!='\0')<br>
+        {<br>
+            str[i]=toupper(str[i]);<br>
+            i++;<br>
+        }<br>
+printf("string in uppercase: %s\n",str);<br>
+}<br>
+
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+Enter a string: c programming<br>
+
+string in uppercase : C PROGRAMMING<br>
+    </p>
+</body>
+</html>

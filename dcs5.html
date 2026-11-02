@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter a number from the user and check it is a decimal number or not ?</h1>
+    <p>
+        #include &lt;stdio.h&gt;<br>
+int main() {<br>
+    char n[20];<br>
+    int i, p=0;<br>
+    printf("Enter a number: ");<br>
+    scanf("%s", n);<br>
+    for(i=0; n[i]!='\0'; i++) {<br>
+      if(n[i]=='.') {<br>
+        p=1;<br>
+        break;<br>
+      }<br>
+    }<br>
+    if(p==1) printf("It is a Decimal number");<br>
+    else  printf("It is not a decimal number");<br>
+
+}<br>
+
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+        Enter a number: 5<br>
+        It is not a decimal number
+    </p>
+</body>
+</html>

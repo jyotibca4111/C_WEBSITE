@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter 2 matrix from user and subtract them ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{ <br>
+    int a[10][10],b[10][10],sub[10][10];<br>
+    int i,j,row,col;<br>
+    
+printf("Enter rows and columns: ");<br>
+scanf("%d %d",&row,&col);<br>
+printf("Enter elements of first matrix: \n");<br>
+	for(i=0;i<row;i++)<br>
+	{<br>
+	       for(j=0;j<col;j++)<br>
+	       {<br>
+		printf("a[%d][%d]= ",i,j);<br>
+		scanf("%d",&a[i][j]);<br>
+		}<br>
+
+	 }<br>
+printf("Enter elements of second matrix: \n");<br>
+	for(i=0;i<row;i++)<br>
+	{<br>
+	      for(j=0;j<col;j++);<br>
+	      {<br>
+	       printf("b[%d][%d]= ",i,j);<br>
+	       scanf("%d",&b[i][j]);<br>
+	       }<br>
+	 }<br>
+ for(i=0;i<row;i++)<br>
+  {<br>
+      for(j=0;j<col;j++)<br>
+      {<br>
+      sub[i][j] = a[i][j]-b[i][j];<br>
+      }<br>
+  }<br>
+printf("\n result of the matrix after subtraction: \n");<br>
+  for(i=0;i<row;i++)<br>
+  {<br>
+      for(j=0;j<col;j++)<br>
+      {<br>
+      printf("%d\t",sub[i][j]);<br>
+      }<br>
+	printf("\n");<br>
+  }<br>
+}<br>
+    </p>
+    <h2>
+        output:-
+    </h2>
+    <p>
+        enter first 2*2 matrix:<br>
+        5  8<br>
+        9  6<br>
+        enter second 2*2 matrix<br>
+        2  3<br> 
+        4  5<br>
+        differnce of the two matrix is:<br>
+        3  5<br>
+        5  1<br>
+    </p>
+</body>
+</html>

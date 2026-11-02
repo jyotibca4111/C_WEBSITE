@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter a string from user and convert into toggle case ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+    char str[50];<br>
+    int i=0;<br>
+    
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+	while(str[i]!='\0')<br>
+	{ if(str[i]>='a'&&str[i]<='z')<br>
+	{<br>
+	str[i]=toupper(str[i]);<br>
+	}<br>
+	     else if(str[i]>='A'&&str[i]<='Z')<br>
+	     {<br>
+	     str[i]= tolower(str[i]);<br>
+	     }<br>
+	     i++;<br>
+	     }<br>
+printf("String in toggle case: %s\n",str);<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: hELLO wORLD<br>
+string in toggle case:Hello World<br>
+ </p>
+</body>
+</html>

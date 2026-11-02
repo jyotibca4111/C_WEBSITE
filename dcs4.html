@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter a number from the user if the number is between 0 to 40 then we will print fail if the number is between 40 to 60 then we will print C grade ,if the number is between 60 to 80 than we will print B grade ,if the number is between 80 to 100 then we will print A grade and rest all number are invalid ?</h1>
+    <p>
+        #include &lt;stdio.h&gt;<br>
+int main()<br>
+{<br>
+    int num;<br>
+    printf("Enter the Number: ");<br>
+    scanf("%d", &num);<br>
+    if (num >= 0 && num <= 40)   printf("fail");<br>
+    else if (num >= 40 && num <= 60) printf("C Grade");<br>
+    else if (num >= 60 && num <= 80)  printf("B Grade");<br>
+    else if (num >= 80 && num <= 100) printf("A Grade");<br>
+    else   printf(" invalid Number");<br>
+}<br>
+    </p>
+    <h2>
+        Output:-
+    </h2>
+    <p>
+        Enter marks: 72<br>
+        B Grade
+    </p>
+</body>
+</html>

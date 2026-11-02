@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Enter a character from user and it is in upper case, lower case, special characters or numbers ?</h1>
+    <p>
+        #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char ch;<br>
+    
+printf("enter any character");<br>
+scanf("%c",&ch);<br>
+        if(ch>='A'&&ch<='Z')<br>
+        printf("IT IS AN UPPERCASE CHARACTER");<br>
+            else if(ch>='a'&&ch<='z')<br>
+                printf("IT IS LOWERCASE CHARACTER");<br>
+                    else if(ch>=0&&ch<=9)<br>
+                    printf("IT IS NUMBERS");<br>
+                else<br>
+                printf("IT IS A SPECIAL CHARACTER");<br>
+}<br>
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+    Enter any charcter:S<br>
+    It is uppercase charcter<br>
+ </p>
+</body>
+</html>

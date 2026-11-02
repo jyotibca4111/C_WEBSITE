@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user and count all vowels ?
+
+ </h1>
+ <p>
+    #include&lt;stdio.h&gt:<br>
+
+void main()<br>
+{<br>
+    char str[100];<br>
+    int i,count=0;<br>
+    
+printf("Enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+    str[strcspn(str,"\n")]=0;<br>
+        for(i=0;str[i];i++)<br>
+        {<br>
+            switch(str[i])<br>
+            {<br>
+                case'a':<br>
+                case'e':<br>
+                case'i':<br>
+                case'o':<br>
+                case'u':<br>
+                case'A':<br>
+                case'E':<br>
+                case'I':<br>
+                case'O':<br>
+                case'U':<br>
+                count++;<br>
+                break;<br>
+            }<br>
+        }<br>
+printf("vowels count :%d\n",count);<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string:<hello><br>
+    total vowels=2<br>
+</hello>
+ </p>
+</body>
+</html>

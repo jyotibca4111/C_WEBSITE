@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Write a program to enter 2 number from the users add them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user add them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user add them and display the answer ?
+   </h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+int input()<br>
+{<br>
+int x;<br>
+printf("enter a number:");<br>
+scanf("%d",&x);<br>
+return x;<br>
+}<br>
+
+float input_float()<br>
+{<br>
+float y;<br>
+printf("enter a number:");<br>
+scanf("%f",&y);<br>
+return y;<br>
+}<br>
+int add(int a,int b)<br>
+{ return a+b;<br>
+}<br>
+int sub(int a,int b)<br>
+{ return a-b;<br>
+}<br>
+int multiple(int a,int b)<br>
+{ return a*b;<br>
+}<br>
+float divide(float a,float b)<br>
+{<br>
+return a/b;<br>
+}<br>
+void output(int res)<br>
+{<br>
+printf("the result is%d",res);<br>
+}<br>
+
+void main()<br>
+{<br>
+int x,y,result;<br>
+clrscr();<br>
+x=input();<br>
+y=input();<br>
+result=add(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=sub(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=add(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result= multiple(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=sub(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=multiple(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=divide(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=divide(x,y);<br>
+output(result);<br>
+
+x=input();<br>
+y=input();<br>
+result=add(x,y);<br>
+output(result);<br>
+}<br>
+
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+
+   </p>
+</body>
+</html>

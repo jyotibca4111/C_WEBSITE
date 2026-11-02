@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter a number from the user if the user enter 1 then you will perform addition operation by entering 2 number from user add it and display answer. if user enter 2 then subtract or if user enter 3 then multiply or if user enter 4 then divide or if user enter 5 then modulo or if any other number then print invalid .if user want to quit the program then user will enter Q. ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+int choice;<br>
+float num1,num2,result;<br>
+char ch;<br>
+while(1)<br>
+{<br>
+printf("\nCHOICE:\n");<br>
+printf("1. Addition\n 2.Subtract\n 3.Multiple\n 4.Division\n 5.Modulo\n Q.Quit\n");<br>
+printf("Enter your choice:");<br>
+scanf("%c",&ch);<br>
+if(ch=='Q'||ch=='q')<br>
+{<br>
+printf("Exiting program...\n");<br>
+break;}<br>
+choice=ch-'0';<br>
+if(choice>=1&&choice<=5)<br>
+{<br>
+printf("Enter two numbers:");<br>
+scanf("%f %f",&num1,&num2);<br>
+}<br>
+switch(choice)<br>
+{<br>
+case 1:<br>
+result=num1+num2;<br>
+printf("Additio=%2f\n",result);<br>
+break;<br>
+case 2:<br>
+result=num1-num2;<br>
+printf("Subtract=%2f\n",result);<br>
+break;<br>
+case 3:<br>
+result=num1*num2;<br>
+printf("Multiplication=%2f\n",result);<br>
+break;<br>
+case 4:<br>
+if(num2!=0)<br>
+printf("Division=%2f\n",num1/num2);<br>
+else<br>
+printf("Error: Division by zero not allowed\n");<br>
+break;<br>
+case 5:<br>
+if((int)num2!=0)<br>
+printf("Modulo=%d\n",(int)num1%(int)num2);<br>
+else<br>
+printf("Error:Modulo by zero not allowed\n");<br>
+break;<br>
+default:<br>
+printf("Invalid choice\n");<br>
+}<br>
+}<br>
+}<br>
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+
+   </p>
+</body>
+</html>

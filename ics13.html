@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1> Enter the number from user and check its palindrome or not?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+int num,reversed=0,remainder,original;<br>
+
+printf("Enter a number:");<br>
+scanf("%d",&num);<br>
+original=num;<br>
+while(num!=0)<br>
+{<br>
+remainder=num%10;<br>
+reversed=reversed*10+remainder;<br>
+num=num/10;<br>
+}<br>
+if(original==reversed)<br>
+printf("%d is a palindrome number.\n",original);<br>
+else<br>
+printf("%d is not a palidrome number.\n",original);<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+enter a number: 121<br>
+121 is a palindrome number<br>
+   </p>
+</body>
+</html>

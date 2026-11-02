@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter a string from user and final length of the string ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+
+
+void main()<br>
+{<br>
+    char str[50];<br>
+    int length;<br>
+    
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+	if(str[strlen(str)-1]=='\n')<br>
+	{<br>
+	str[strlen(str)-1]='\0';<br>
+	}<br>
+	  length=strlen(str);<br>
+
+printf("Length of the string is: %d\n",length);<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string:hello<br>
+length of string:5<br>
+ </p>
+</body>
+</html>

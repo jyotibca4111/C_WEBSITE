@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+ <h1>Enter the string from user ,enter a number from user ,if the user enter 0 then you will print first character of string ,if the user enter 1 then you will print second character of string ,if user enter 2 then you will print third character of string ,if user enter 3 then you point fourth character of string and if out of string then you will print out of bound ?</h1>
+ <p>
+    #include&lt;stdio.h&gt;<br>
+void main()<br>
+{<br>
+    char str[50];<br>
+    int index;<br>
+    
+printf("enter a string: ");<br>
+fgets(str,sizeof(str),stdin);<br>
+
+	if(str[strlen(str)-1]=='\n')<br>
+	{<br>
+	str[strlen(str)-1]='\0';<br>
+	}<br>
+printf("Enter a number: ");<br>
+scanf("%d",&index);<br>
+    if(index>=0&&index<strlen(str))<br>
+    {<br>
+      printf("Character at index %d is '%c'\n",index,str[index]);<br>
+      }<br>
+      else<br>
+      {printf("Out of bound\n");   }<br>
+}<br>
+
+ </p>
+ <h2>
+    Output:-
+ </h2>
+ <p>
+enter a string: Hello<br>
+enter a number:1<br>
+character:e<br>
+ </p>
+</body>
+</html>

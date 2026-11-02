@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter a number from the user and find out the binary of that number ?</h1>
+   <p>.
+    #include&lt;stdio.h&gt;<br>
+
+void binary(int n);<br>
+void binary(int n)<br>
+{<br>
+int binary[32];<br>
+int i=0;<br>
+if(n==0)<br>
+{<br>
+printf("0");<br>
+}<br>
+while(n>0)<br>
+{<br>
+binary[i]=n%2;<br>
+n=n/2;<br>
+i++;<br>
+}<br>
+for(int j=i-1;j>=0;j--)<br>
+{<br>
+printf("%d",binary[j]);<br>
+}<br>
+printf("\n");<br>
+}<br>
+void main()<br>
+{<br>
+int num;<br>
+<br>
+printf("Enter the number:");<br>
+scanf("%d",&num);<br>
+binary(num);<br>
+printf("Binary of%d is:",num);<br>
+}<br>
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+enter a number: 5<br>
+binary of 5 is : 00000000000000000000000000000101<br>
+   </p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print quotes
+    </title>
+</head>
+<body>
+   <h1>Enter password from user maximum 20 digits / character press enter key if you want to exit ?</h1>
+   <p>
+    #include&lt;stdio.h&gt;<br>
+
+void main()<br>
+{<br>
+    char password[21];<br>
+    
+    while(1)<br>
+{<br>
+printf("Enter password maximum20(digits/character)or press enter key to exit:\n");<br>
+fgets(password,sizeof (password),stdin);<br>
+
+    password[strcspn(password,"\n" )]='\0';<br>
+        if(strlen(password)==0)<br>
+        {<br>
+            printf("Exiting program...\n");<br>
+            break;<br>
+        }<br>
+printf("you entered:%s\n",password);<br>
+}<br>
+}<br>
+
+   </p>
+   <h2>
+    Output:-
+   </h2>
+   <p>
+    Enter password:hello123<br>
+    you entered : hello123<br>
+    enter password: Cprogram<br>
+    you entered:Cprogram<br>
+    enter password:
+    exisitng program:
+   </p>
+</body>
+</html>
